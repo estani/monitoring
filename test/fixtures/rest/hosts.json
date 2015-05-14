@@ -1,0 +1,41 @@
+[{
+    "name": "some machine",
+    "ip":"1.2.3.4",
+    "environment":"build",
+    "services": [{
+        "name": "Solr",
+        "type": "solr",
+        "version": "4.3",
+        "port": 8080,
+        "adminUrl": "http://blah/blub",
+        "uses": [{
+            "host": "192.168.123.115",
+            "port": 5432
+        }]
+    },
+    {
+        "name": "CouchDB",
+        "type": "couchdb",
+        "port": [9001,9002],
+        "version": "2.3",
+        "adminUrl": null
+    }], 
+    "meta": {
+        "upSince":0
+    }
+},
+{
+    "name": "some other machine",
+    "ip":"192.168.123.115",
+    "environment":"build",
+    "services": [{
+        "name": "Postgres DB",
+        "type": "postgresql",
+        "version": "9.2",
+        "port": 5432
+    }], 
+    "meta": {
+        "upSince":12
+    }
+}]
+
