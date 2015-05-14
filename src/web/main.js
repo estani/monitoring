@@ -8,6 +8,7 @@ require.config({
         angularCookies: 'angular-cookies/angular-cookies',
         angularMocks: 'angular-mocks/angular-mocks',
         jquery: 'jquery/dist/jquery',
+        jsplumb: 'jsplumb/dist/js/dom.jsPlumb-1.7.5'
 
         //core
         //app: 'app',

@@ -1,3 +1,5 @@
 <div class="title"><a ng-show="service.adminUrl" href="service.adminUrl">{{service.name}}</a> 
 <span ng-show="!service.adminUrl">{{service.name}}</span>
-({{service.port|utils_join}})</div>
+({{service.port|utils_join}})<br>
+<mon-service-detail-dyn />
+</div>

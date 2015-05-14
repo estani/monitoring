@@ -1,6 +1,7 @@
 
 /* App Module */
 define(['jquery',
+        'jsplumb',
         'angular',
         'ngRoute',
         'ngResource',
@@ -10,7 +11,7 @@ define(['jquery',
         'app/dashboard/dashboard',
         'app/host/hostDrtv',
         'app/host/serviceDrtv'], 
-        function (jquery, angular, ngRoute, ngResource, 
+        function (jquery, jsplumb, angular, ngRoute, ngResource, 
             config, filterUtils,
             hostProviderFactory, dashboard, 
             hostDrtv, serviceDrtv) {
@@ -21,6 +22,15 @@ define(['jquery',
         .factory('hostProviderFactory', hostProviderFactory)
         .directive('monHost', hostDrtv)
         .directive('monHostService', serviceDrtv)
+        .directive('monServiceDetailDyn', function () {
+              return {
+                    template:'<ng-include src="template"/>',
+                    restrict: 'E',
+                    link: function postLink(scope) {
+                          scope.template = 'app/host/services/'+scope.service.type+'_tpl.html';
+                    }
+              }
+        })
         .controller('DashboardCtrl', dashboard);
     
     //register utility filters
