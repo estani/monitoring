@@ -1,0 +1,23 @@
+.monitor#dashboard {
+    background-color:#f8faf3;
+    padding:10px;
+}
+.monitor.host {
+    padding: 5px;
+    margin: 5px;
+    background-color: #fff;
+    width: 300px;
+
+    border: 2px rgb(189, 186, 186) solid;
+
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+
+    -moz-box-shadow:  3px 3px 10px 0px rgba(128, 128, 128, 0.42);
+    -webkit-box-shadow:  3px 3px 10px 0px rgba(128, 128, 128, 0.42);
+    box-shadow:  3px 3px 10px 0px rgba(128, 128, 128, 0.42);
+}
+.monitor.service .title{
+    font-weight:bold;
+}
