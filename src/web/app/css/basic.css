@@ -2,6 +2,12 @@
     background-color:#f8faf3;
     padding:10px;
 }
+.monitor.navy {
+    background-color: #eee;
+    margin:-10px -10px 10px -10px;
+    padding:5px;
+    border: 1px #ccc dotted;
+}
 .monitor.host {
     padding: 5px;
     margin: 5px;

@@ -2,15 +2,30 @@ define([], function() {
     'use strict';
     
     function init($cookies) {
+        var isStorageSupported = function() {
+            try {
+                return 'localStorage' in window && window['localStorage'] !== null;
+            } catch (e) {
+                return false;
+            }
+        }();
 
-        console.log($cookies);
         return {
             getPreference: function (key, default_value) {
-                var value = $cookies[key];
+                var value;
+                if (isStorageSupported) {
+                    value = localStorage.getItem(key);
+                } else {
+                    value = $cookies['local_'+key];
+                }
                 return value !== undefined ? value : default_value;
             },
             setPreference: function(key, value) {
-                $cookies[key] = value;
+                if (isStorageSupported) {
+                    localStorage.setItem(key, value);
+                } else {
+                    $cookies['local_'+key] = value;
+                }
             }
         };
     };

@@ -9,13 +9,6 @@ require.config({
         angularMocks: 'angular-mocks/angular-mocks',
         jquery: 'jquery/dist/jquery',
         jsplumb: 'jsplumb/dist/js/dom.jsPlumb-1.7.5'
-
-        //core
-        //app: 'app',
-        //config: 'config',
-
-        //angular components
-        //dashboard: 'dahboard/dashboard'
     },
     shim: {
         'angular' : {'exports' : 'angular'},

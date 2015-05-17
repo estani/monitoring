@@ -1,5 +1,5 @@
 <div class="title" ng-click="isDetailsVisible = !isDetailsVisible"><a ng-show="service.adminUrl" href="service.adminUrl">{{service.name}}</a> 
 <span ng-show="!service.adminUrl">{{service.name}}</span>
 ({{service.port|utils_join}})<br>
-<mon-service-detail-dyn  ng-show="isDetailsVisible" />
+<mon-dynamic path="app/host/services/dynamic" type="{{service.type}}"  ng-show="isDetailsVisible" />
 </div>

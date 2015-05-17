@@ -16,7 +16,6 @@ define([], function() {
                 });
                 userProvider.setPreference('environment', newVal);
             }
-            console.log('new:%s, old:%s', newVal, oldVal);
         });
     };
     DashboardCtrl.$inject = ['$scope', 'hostProviderFactory', 'userProviderFactory'];

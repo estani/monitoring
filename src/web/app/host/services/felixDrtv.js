@@ -2,9 +2,6 @@ define([], function() {
     'use strict'
     return function () {
         return {
-            scope: {
-                
-            }
-            templateUrl: 'app/host/service/felix_tpl.html'}
+            templateUrl: 'app/host/services/felix_tpl.html'}
     };
 });
