@@ -5,7 +5,7 @@ require.config({
         angular: 'angular/angular',
         ngRoute: 'angular-route/angular-route',
         ngResource: 'angular-resource/angular-resource',
-        angularCookies: 'angular-cookies/angular-cookies',
+        ngCookies: 'angular-cookies/angular-cookies',
         angularMocks: 'angular-mocks/angular-mocks',
         jquery: 'jquery/dist/jquery',
         jsplumb: 'jsplumb/dist/js/dom.jsPlumb-1.7.5'
@@ -21,6 +21,7 @@ require.config({
         'angular' : {'exports' : 'angular'},
         'ngRoute': ['angular'],
         'ngResource': ['angular'],
+        'ngCookies': ['angular'],
         'angularMocks': {
             deps:['angular'],
             'exports':'angular.mock'

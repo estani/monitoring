@@ -5,21 +5,25 @@ define(['jquery',
         'angular',
         'ngRoute',
         'ngResource',
+        'ngCookies',
         'app/config',
         'app/filters/utils',
         'app/providers/host',
+        'app/providers/user',
         'app/dashboard/dashboard',
         'app/host/hostDrtv',
         'app/host/serviceDrtv'], 
-        function (jquery, jsplumb, angular, ngRoute, ngResource, 
+        function (jquery, jsplumb, angular, 
+            ngRoute, ngResource, ngCookies,
             config, filterUtils,
-            hostProviderFactory, dashboard, 
+            hostProviderFactory, userProviderFactory, dashboard, 
             hostDrtv, serviceDrtv) {
     'use strict';
 
-    var monitoring = angular.module('monitoring', ['ngRoute', 'ngResource'])
+    var monitoring = angular.module('monitoring', ['ngRoute', 'ngResource', 'ngCookies'])
         .config(config)
         .factory('hostProviderFactory', hostProviderFactory)
+        .factory('userProviderFactory', userProviderFactory)
         .directive('monHost', hostDrtv)
         .directive('monHostService', serviceDrtv)
         .directive('monServiceDetailDyn', function () {
@@ -27,7 +31,8 @@ define(['jquery',
                     template:'<ng-include src="template"/>',
                     restrict: 'E',
                     link: function postLink(scope) {
-                          scope.template = 'app/host/services/'+scope.service.type+'_tpl.html';
+                        var type = scope.service.type;
+                        scope.template = 'app/host/services/dynamic/' + type + '_tpl.html';
                     }
               }
         })

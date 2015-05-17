@@ -1,5 +1,5 @@
 [{
-    "name": "some machine",
+    "name": "data1",
     "ip":"1.2.3.4",
     "environment":"build",
     "services": [{
@@ -25,7 +25,7 @@
     }
 },
 {
-    "name": "some other machine",
+    "name": "db1",
     "ip":"192.168.123.115",
     "environment":"build",
     "services": [{
@@ -36,6 +36,20 @@
     }], 
     "meta": {
         "upSince":12
+    }
+},
+{
+    "name": "be1",
+    "ip":"192.168.123.115",
+    "environment":"build",
+    "services": [{
+        "name": "Felix Backend",
+        "type": "felix",
+        "version": "1.4",
+        "port": 31005
+    }], 
+    "meta": {
+        "upSince":32
     }
 }]
 

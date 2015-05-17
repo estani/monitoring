@@ -1,0 +1,414 @@
+{
+  "bundles": [
+    {
+      "id": 0,
+      "status": "Active",
+      "name": "org.apache.felix.framework",
+      "version": "4.2.1"
+    },
+    {
+      "id": 1,
+      "status": "Active",
+      "name": "biz.aQute.bnd.annotation",
+      "version": "2.3.0.20140510-060920"
+    },
+    {
+      "id": 2,
+      "status": "Active",
+      "name": "org.apache.felix.configadmin",
+      "version": "1.8.0"
+    },
+    {
+      "id": 3,
+      "status": "Active",
+      "name": "org.apache.felix.dependencymanager",
+      "version": "3.2.0"
+    },
+    {
+      "id": 4,
+      "status": "Active",
+      "name": "org.apache.felix.eventadmin",
+      "version": "1.4.2"
+    },
+    {
+      "id": 5,
+      "status": "Active",
+      "name": "org.apache.felix.fileinstall",
+      "version": "3.4.2"
+    },
+    {
+      "id": 6,
+      "status": "Active",
+      "name": "org.apache.felix.gogo.command",
+      "version": "0.14.0"
+    },
+    {
+      "id": 7,
+      "status": "Active",
+      "name": "org.apache.felix.gogo.runtime",
+      "version": "0.12.1"
+    },
+    {
+      "id": 8,
+      "status": "Active",
+      "name": "org.apache.felix.gogo.shell",
+      "version": "0.10.0"
+    },
+    {
+      "id": 9,
+      "status": "Active",
+      "name": "org.apache.felix.http.jetty",
+      "version": "2.2.2"
+    },
+    {
+      "id": 10,
+      "status": "Active",
+      "name": "org.apache.felix.http.whiteboard",
+      "version": "2.2.2"
+    },
+    {
+      "id": 11,
+      "status": "Active",
+      "name": "org.apache.felix.metatype",
+      "version": "1.0.10"
+    },
+    {
+      "id": 12,
+      "status": "Active",
+      "name": "org.apache.felix.scr",
+      "version": "1.8.2"
+    },
+    {
+      "id": 13,
+      "status": "Active",
+      "name": "org.apache.felix.shell.remote",
+      "version": "1.1.2"
+    },
+    {
+      "id": 14,
+      "status": "Active",
+      "name": "org.apache.felix.webconsole",
+      "version": "3.1.8"
+    },
+    {
+      "id": 15,
+      "status": "Active",
+      "name": "org.ops4j.pax.logging.pax-logging-api",
+      "version": "1.8.1"
+    },
+    {
+      "id": 16,
+      "status": "Active",
+      "name": "org.ops4j.pax.logging.pax-logging-service",
+      "version": "1.8.1"
+    },
+    {
+      "id": 17,
+      "status": "Active",
+      "name": "com.google.guava",
+      "version": "14.0.1"
+    },
+    {
+      "id": 18,
+      "status": "Active",
+      "name": "com.google.guava",
+      "version": "18.0.0"
+    },
+    {
+      "id": 19,
+      "status": "Active",
+      "name": "javax.persistence",
+      "version": "2.1.0.v201304241213"
+    },
+    {
+      "id": 20,
+      "status": "Active",
+      "name": "javax.servlet",
+      "version": "2.5.0.v200910301333"
+    },
+    {
+      "id": 21,
+      "status": "Active",
+      "name": "joda-time",
+      "version": "2.3.0"
+    },
+    {
+      "id": 22,
+      "status": "Active",
+      "name": "org.apache.commons.lang3",
+      "version": "3.1.0"
+    },
+    {
+      "id": 23,
+      "status": "Active",
+      "name": "org.apache.commons.pool",
+      "version": "1.5.4"
+    },
+    {
+      "id": 24,
+      "status": "Active",
+      "name": "org.apache.servicemix.bundles.commons-dbcp",
+      "version": "1.4.0.3"
+    },
+    {
+      "id": 25,
+      "status": "Active",
+      "name": "org.apache.servicemix.bundles.postgresql",
+      "version": "9.3.0.1100-jdbc41_1"
+    },
+    {
+      "id": 26,
+      "status": "Active",
+      "name": "hessian4.0.37osgi",
+      "version": "4.0.371"
+    },
+    {
+      "id": 27,
+      "status": "Active",
+      "name": "jackson-core-asl",
+      "version": "1.9.8"
+    },
+    {
+      "id": 28,
+      "status": "Active",
+      "name": "jackson-jaxrs",
+      "version": "1.9.8"
+    },
+    {
+      "id": 29,
+      "status": "Active",
+      "name": "jackson-mapper-asl",
+      "version": "1.9.8"
+    },
+    {
+      "id": 30,
+      "status": "Active",
+      "name": "org.amdatu.web.rest.doc",
+      "version": "1.1.1"
+    },
+    {
+      "id": 31,
+      "status": "Active",
+      "name": "org.amdatu.web.rest.jaxrs",
+      "version": "1.0.4"
+    },
+    {
+      "id": 32,
+      "status": "Active",
+      "name": "org.amdatu.web.rest.wink",
+      "version": "1.0.8"
+    },
+    {
+      "id": 57,
+      "status": "Active",
+      "name": "com.farmnet365.common.aam.modular.api",
+      "version": "1.0.0"
+    },
+    {
+      "id": 74,
+      "status": "Active",
+      "name": "com.farmnet365.reporting.web",
+      "version": "0.4.0"
+    },
+    {
+      "id": 82,
+      "status": "Active",
+      "name": "com.farmnet365.common.aam.modular.impl",
+      "version": "1.0.7"
+    },
+    {
+      "id": 93,
+      "status": "Active",
+      "name": "com.farmnet365.common.aam.modular.impl",
+      "version": "1.0.6"
+    },
+    {
+      "id": 94,
+      "status": "Active",
+      "name": "365farmnet.bapi.api",
+      "version": "1.3.0"
+    },
+    {
+      "id": 95,
+      "status": "Active",
+      "name": "365farmnet.bapi.endpoints",
+      "version": "1.3.0"
+    },
+    {
+      "id": 96,
+      "status": "Active",
+      "name": "365farmnet.bapi.tools",
+      "version": "1.3.0"
+    },
+    {
+      "id": 101,
+      "status": "Active",
+      "name": "com.claas.cas.claas365businessInterface",
+      "version": "2.18.5.SNAPSHOT"
+    },
+    {
+      "id": 102,
+      "status": "Active",
+      "name": "365farmnet.bapi.impl",
+      "version": "1.3.0"
+    },
+    {
+      "id": 103,
+      "status": "Active",
+      "name": "com.farmnet365.common.aam.core",
+      "version": "0.2.17"
+    }
+  ],
+  "services": [
+    {
+      "id": 0,
+      "status": "active",
+      "bundle": 82,
+      "name": "com.farmnet365.common.aam.modular.impl.AamBundleTracker"
+    },
+    {
+      "id": 1,
+      "status": "active",
+      "bundle": 82,
+      "name": "com.farmnet365.aam"
+    },
+    {
+      "id": 2,
+      "status": "active",
+      "bundle": 93,
+      "name": "com.farmnet365.common.aam.modular.impl.AamBundleTracker"
+    },
+    {
+      "id": 3,
+      "status": "unsatisfied",
+      "bundle": 93,
+      "name": "com.farmnet365.aam"
+    },
+    {
+      "id": 4,
+      "status": "active",
+      "bundle": 95,
+      "name": "com.farmnet365.bapi.endpoints.GeneralServiceREST"
+    },
+    {
+      "id": 5,
+      "status": "active",
+      "bundle": 95,
+      "name": "com.farmnet365.bapi.endpoints.cropmnp.CropFieldcardServiceREST"
+    },
+    {
+      "id": 6,
+      "status": "active",
+      "bundle": 95,
+      "name": "com.farmnet365.bapi.endpoints.cropmnp.CropMasterDataServiceREST"
+    },
+    {
+      "id": 7,
+      "status": "active",
+      "bundle": 95,
+      "name": "com.farmnet365.bapi.endpoints.cropmnp.CropOperationActivityServiceREST"
+    },
+    {
+      "id": 8,
+      "status": "active",
+      "bundle": 95,
+      "name": "com.farmnet365.bapi.endpoints.cropmnp.CropOperationServiceREST"
+    },
+    {
+      "id": 9,
+      "status": "active",
+      "bundle": 95,
+      "name": "com.farmnet365.bapi.endpoints.cropmnp.CropTaskServiceREST"
+    },
+    {
+      "id": 10,
+      "status": "active",
+      "bundle": 95,
+      "name": "com.farmnet365.bapi.endpoints.fmng.FarmManagementServiceREST"
+    },
+    {
+      "id": 11,
+      "status": "active",
+      "bundle": 102,
+      "name": "com.farmnet365.bapi.impl.FarmServiceImpl"
+    },
+    {
+      "id": 12,
+      "status": "active",
+      "bundle": 102,
+      "name": "com.farmnet365.bapi.impl.FertilizerServiceImpl"
+    },
+    {
+      "id": 13,
+      "status": "active",
+      "bundle": 102,
+      "name": "com.farmnet365.bapi.impl.FieldServiceImpl"
+    },
+    {
+      "id": 14,
+      "status": "active",
+      "bundle": 102,
+      "name": "com.farmnet365.bapi.impl.FieldcardServiceImpl"
+    },
+    {
+      "id": 15,
+      "status": "active",
+      "bundle": 102,
+      "name": "com.farmnet365.bapi.impl.MachineServiceImpl"
+    },
+    {
+      "id": 16,
+      "status": "active",
+      "bundle": 102,
+      "name": "com.farmnet365.bapi.impl.MasterDataServiceImpl"
+    },
+    {
+      "id": 17,
+      "status": "active",
+      "bundle": 102,
+      "name": "com.farmnet365.bapi.impl.OperationActivityServiceImpl"
+    },
+    {
+      "id": 18,
+      "status": "active",
+      "bundle": 102,
+      "name": "com.farmnet365.bapi.impl.OperationServiceImpl"
+    },
+    {
+      "id": 19,
+      "status": "active",
+      "bundle": 102,
+      "name": "com.farmnet365.bapi.impl.PersonServiceImpl"
+    },
+    {
+      "id": 20,
+      "status": "active",
+      "bundle": 102,
+      "name": "com.farmnet365.bapi.impl.PlantProtectantServiceImpl"
+    },
+    {
+      "id": 21,
+      "status": "active",
+      "bundle": 102,
+      "name": "com.farmnet365.bapi.impl.SearchHiercharyServiceImpl"
+    },
+    {
+      "id": 22,
+      "status": "active",
+      "bundle": 102,
+      "name": "com.farmnet365.bapi.impl.SeedServiceImpl"
+    },
+    {
+      "id": 23,
+      "status": "active",
+      "bundle": 102,
+      "name": "com.farmnet365.bapi.impl.TemplateServiceImpl"
+    },
+    {
+      "id": 24,
+      "status": "active",
+      "bundle": 102,
+      "name": "com.farmnet365.bapi"
+    }
+  ]
+}
