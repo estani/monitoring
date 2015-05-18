@@ -1,23 +1,23 @@
 define([], function() {
     'use strict';
-    function DashboardCtrl($scope, hostProvider, userProvider) {
+    function DashboardCtrl($scope, host, user, connector) {
         $scope.hosts = [];
         //to be extracted
         $scope.environments = 'Build BuildS BuildX PreProd'.split(' ');
         
         $scope.$watch('environment', function(newVal, oldVal) {
             if (newVal === undefined) 
-                $scope.environment = $scope.environment || userProvider.getPreference('environment', 'build');
+                $scope.environment = $scope.environment || user.getPreference('environment', 'build');
             else if (newVal !== oldVal) {
-                hostProvider.findByEnvironment($scope.environment).then(function(hosts){
+                host.findByEnvironment($scope.environment).then(function(hosts){
                     $scope.hosts = hosts;
                 }, function(){
                     $scope.hosts = []
                 });
-                userProvider.setPreference('environment', newVal);
+                user.setPreference('environment', newVal);
             }
         });
     };
-    DashboardCtrl.$inject = ['$scope', 'hostProviderFactory', 'userProviderFactory'];
+    DashboardCtrl.$inject = ['$scope', 'host', 'user', 'connector'];
     return DashboardCtrl;
 });

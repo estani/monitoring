@@ -40,7 +40,7 @@
 },
 {
     "name": "be1",
-    "ip":"192.168.123.115",
+    "ip":"192.168.123.114",
     "environment":"build",
     "services": [{
         "name": "Felix Backend",

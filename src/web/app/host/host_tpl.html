@@ -1,4 +1,4 @@
-<div class="monitor host">
+<div class="monitor host" id="{{host.ip}}">
     <h3><b>{{host.name}}</b> <i>@{{host.ip}}</i></h3>
     <mon-host-service class="monitor service" ng-repeat="service in host.services" />
 </div>

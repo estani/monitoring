@@ -8,6 +8,7 @@ define(['jquery',
         'ngCookies',
         'app/config',
         'app/filters/utils',
+        'app/graphics/connector',
         'app/providers/host',
         'app/providers/user',
         'app/dashboard/dashboard',
@@ -16,15 +17,16 @@ define(['jquery',
         'app/host/services/felixDrtv'], 
         function (jquery, jsplumb, angular, 
             ngRoute, ngResource, ngCookies,
-            config, filterUtils,
+            config, filterUtils, connectorFactory,
             hostProviderFactory, userProviderFactory, dashboard, 
             hostDrtv, serviceDrtv, felixDrtv) {
     'use strict';
 
     var monitoring = angular.module('monitoring', ['ngRoute', 'ngResource', 'ngCookies'])
         .config(config)
-        .factory('hostProviderFactory', hostProviderFactory)
-        .factory('userProviderFactory', userProviderFactory)
+        .factory('host', hostProviderFactory)
+        .factory('user', userProviderFactory)
+        .factory('connector', connectorFactory)
         .directive('monHost', hostDrtv)
         .directive('monHostService', serviceDrtv)
         .directive('monFelix', felixDrtv)
