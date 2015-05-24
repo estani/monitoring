@@ -1,14 +1,23 @@
+body,html{
+    height: 100%;
+}
 .monitor#dashboard {
+    height: 100%;
+}
+
+.monitor#hostsDashboard {
     background-color:#f8faf3;
     padding:10px;
+    position:relative;
+    height: 500px;
 }
 .monitor.navy {
     background-color: #eee;
-    margin:-10px -10px 10px -10px;
     padding:5px;
     border: 1px #ccc dotted;
 }
 .monitor.host {
+    position: absolute;
     padding: 5px;
     margin: 5px;
     background-color: #fff;

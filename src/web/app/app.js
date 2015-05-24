@@ -1,6 +1,7 @@
 
 /* App Module */
 define(['jquery',
+        'jqueryUi',
         'jsplumb',
         'angular',
         'ngRoute',
@@ -15,7 +16,7 @@ define(['jquery',
         'app/host/hostDrtv',
         'app/host/serviceDrtv',
         'app/host/services/felixDrtv'], 
-        function (jquery, jsplumb, angular, 
+        function (jquery, jqueryUi, jsplumb, angular, 
             ngRoute, ngResource, ngCookies,
             config, filterUtils, connectorFactory,
             hostProviderFactory, userProviderFactory, dashboard, 

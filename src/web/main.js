@@ -8,7 +8,8 @@ require.config({
         ngCookies: 'angular-cookies/angular-cookies',
         angularMocks: 'angular-mocks/angular-mocks',
         jquery: 'jquery/dist/jquery',
-        jsplumb: 'jsplumb/dist/js/dom.jsPlumb-1.7.5'
+        jqueryUi: 'jquery-ui/jquery-ui',
+        jsplumb: 'jsplumb/dist/js/jquery.jsPlumb-1.7.5'
     },
     shim: {
         'angular' : {'exports' : 'angular'},

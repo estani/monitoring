@@ -2,5 +2,7 @@
     <div class="monitor navy">
         Environment: <select ng-model="environment" ng-options="e.toLowerCase() as e for e in environments"/>
     </div>
-    <mon-host ng-repeat="host in hosts" />
+    <div id="{{hostsDashboardId}}" class="monitor">
+        <mon-host ng-repeat="host in hosts" />
+    </div>
 </div>
