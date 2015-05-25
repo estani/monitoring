@@ -1,5 +1,4 @@
-<div class="title" id="{{host.ip}}_{{service.type}}" ng-click="isDetailsVisible = !isDetailsVisible" >
-    
+<div class="title" id="{{service.id}}" ng-click="isDetailsVisible = !isDetailsVisible" >
     <a ng-show="service.adminUrl" href="service.adminUrl">{{service.name}}</a> 
     <span ng-show="!service.adminUrl">{{service.name}}</span>
 ({{service.port|utils_join}})<br>

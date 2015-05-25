@@ -14,12 +14,19 @@ define([], function() {
                 hostsResp.forEach(function(host){
                     host.id = host.ip.replace(/\./g, '_');
                     hosts.push(host);
+                    host.services.forEach(function(service) {
+                        service.id = host.id + '-' + service.port;
+                        if (service.uses) {
+                            service.uses.forEach(function(uses) {
+                                uses.id = uses.host.replace(/\./g, '_') + '-' + uses.port;
+                            });
+                        }
+                    });
                 });
                 $scope.hosts = hosts;
                 $scope.hostsDisplay = user.getPreference('hostsDisplay-'+$scope.environment, {});
                 
                 $timeout(function(){
-                    console.log('hosts: %s', $scope.hosts);
                     connector.init( $scope.hostsDashboardId, $scope.hosts, $scope.hostsDisplay);
                 }, 200);
             }, function(){
@@ -31,10 +38,9 @@ define([], function() {
             if (newVal !== oldVal) {
                 if (oldVal) {
                     user.setPreference('hostsDisplay-'+oldVal, $scope.hostsDisplay);
-
                 }
-                updateHosts();
                 user.setPreference('environment', newVal);
+                updateHosts();
             }
         });
 
@@ -46,8 +52,6 @@ define([], function() {
         updateHosts();
         
         connector.onChange(function(e){
-            //TODO: not working as expected, the values are not correct...
-            console.log($scope.hostsDisplay, e);
             //store user state
             user.setPreference('hostsDisplay-'+$scope.environment, $scope.hostsDisplay);
         });

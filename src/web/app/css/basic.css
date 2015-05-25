@@ -18,7 +18,7 @@ body,html{
 }
 .monitor.host {
     position: absolute;
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
     background-color: #fff;
     width: 300px;
@@ -35,4 +35,7 @@ body,html{
 }
 .monitor.service .title{
     font-weight:bold;
+    border-bottom: #f3f3f3 solid 1px;
+    background-color: #fafafa;
 }
+
