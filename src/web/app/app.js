@@ -12,6 +12,7 @@ define(['jquery',
         'app/graphics/connector',
         'app/providers/host',
         'app/providers/user',
+        'app/providers/felix',
         'app/dashboard/dashboard',
         'app/host/hostDrtv',
         'app/host/serviceDrtv',
@@ -19,7 +20,8 @@ define(['jquery',
         function (jquery, jqueryUi, jsplumb, angular, 
             ngRoute, ngResource, ngCookies,
             config, filterUtils, connectorFactory,
-            hostProviderFactory, userProviderFactory, dashboard, 
+            hostProviderFactory, userProviderFactory, felixProviderFactory,
+            dashboard, 
             hostDrtv, serviceDrtv, felixDrtv) {
     'use strict';
 
@@ -27,6 +29,7 @@ define(['jquery',
         .config(config)
         .factory('host', hostProviderFactory)
         .factory('user', userProviderFactory)
+        .factory('felix', felixProviderFactory)
         .factory('connector', connectorFactory)
         .directive('monHost', hostDrtv)
         .directive('monHostService', serviceDrtv)

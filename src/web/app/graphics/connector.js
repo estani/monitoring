@@ -39,7 +39,6 @@ define(['jsplumb'], function(jsplumb) {
                             anchor:['Continuous', {faces:['left','right']}],
                             connectorStyle: {strokeStyle: "#5c96bc", lineWidth: 2, outlineColor: "transparent", outlineWidth: 4 }
                         });
-                        console.log ('%s->%s', service.id, connect.id);
                     }
                 }
                 //dragging logic

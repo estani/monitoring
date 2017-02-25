@@ -1,7 +1,14 @@
 define([], function() {
     'use strict'
-    return function () {
+    function init(felix) {
         return {
-            templateUrl: 'app/host/services/felix_tpl.html'}
+            scope: {host: '='},
+            templateUrl: 'app/host/services/felix_tpl.html',
+            link: function (scope, elem, attrs) {
+                console.log(scope);
+            }
+        }
     };
+    init.$injector = ['felix'];
+    return init;
 });
